@@ -12,6 +12,9 @@ const solve = () =>	result.value = eval(result.value);
 //function that clears the display 
 const clear = () =>	result.value = "";
 
-for (var i = 0; i < input.length; i++) {input[i].onclick = dis;}
+
+//Displays value when the appropriate button is clicked
+for (i of input){ i.onclick = dis;}  //Alternatively you can use this --->> for (var i = 0; i < input.length; i++) {input[i].onclick = dis;}
+
 clr.onclick = clear;
 answer.onclick = solve;
