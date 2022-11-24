@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container" align="center">
+		<h1>My Calculator</h1>
+		<table border="1"> 
+
+			<tr> 
+				<td colspan="3"><input type="text" id="result"/></td> 
+				<!-- clr() function will call clr to clear all value --> 
+				<td><input type="button" value="c" id="clr"/> </td> 
+			</tr>
+
+			<!-- create button and assign value to each button --> 
+			<!-- dis("1") will call function dis to display value --> 
+			<tr> 
+				<td><input type="button" value="1" class="inputbtn" /> </td> 
+				<td><input type="button" value="2" class="inputbtn" /> </td> 
+				<td><input type="button" value="3" class="inputbtn" /> </td> 
+				<td><input type="button" value="/" class="inputbtn" /> </td> 
+			</tr>
+			<tr> 
+				<td><input type="button" value="4" class="inputbtn" /> </td> 
+				<td><input type="button" value="5" class="inputbtn" /> </td> 
+				<td><input type="button" value="6" class="inputbtn" /> </td> 
+				<td><input type="button" value="-" class="inputbtn" /> </td> 
+			</tr>
+			<tr> 
+				<td><input type="button" value="7" class="inputbtn" /> </td> 
+				<td><input type="button" value="8" class="inputbtn" /> </td> 
+				<td><input type="button" value="9" class="inputbtn" /> </td> 
+				<td><input type="button" value="+" class="inputbtn" /> </td> 
+			</tr>
+			<tr> 
+				<td><input type="button" value="." class="inputbtn" /> </td> 
+				<td><input type="button" value="0" class="inputbtn" /> </td> 
+				<td><input type="button" value="=" id="solve" onclick="solve()"/> </td> 
+				<td><input type="button" value="*" class="inputbtn" /> </td> 
+			</tr>
+		</table>
+	</div>
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
